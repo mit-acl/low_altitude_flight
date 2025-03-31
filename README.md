@@ -22,7 +22,7 @@ $ python3 scripts/train_resnet.py params/resnet.yaml
 
 (Please change the paths involved accordingly.)
 
-## Some tips on Isaac Sim
+## Some Tips on Isaac Sim
 To load a usd file into Isaac, use
 ```sh
 omni.usd.get_context().open_stage("terrain.usd")
@@ -32,3 +32,10 @@ Camera pose can be set with
 camera.set_world_poses(camera_positions, camera_orientations, convention='world')
 ```
 
+### Related Works
+This work builds on: \
+[Safe Low-Altitude Navigation in Steep Terrain with Fixed-Wing Aerial Vehicles
+](https://github.com/ethz-asl/terrain-navigation) \
+[Learning High-Speed Flight in the Wild](https://github.com/uzh-rpg/agile_autonomy) \
+[iPlanner: Imperative Path Planning](https://github.com/leggedrobotics/iPlanner) \
+[Multi-Task Learning Using Uncertainty to Weigh Losses for Scene Geometry and Semantics](https://openaccess.thecvf.com/content_cvpr_2018/html/Kendall_Multi-Task_Learning_Using_CVPR_2018_paper.html)
